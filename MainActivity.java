@@ -1,7 +1,6 @@
-package com.example.android_project_master;
+package com.example.android_project_master2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
