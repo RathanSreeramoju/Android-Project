@@ -6,73 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#96C5C1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:text="GeneralKnowledge:"
-            android:textSize="36dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:text="Who is the developer of Android Studio?"
-            android:textSize="24dp" />
-
-        <RadioButton
-            android:id="@+id/radioButton6"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="Google, JetBrains"
-            android:textSize="24dp"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="James Gosling"
-            android:textSize="24dp"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <RadioButton
-            android:id="@+id/radioButton8"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:text="San Francisco"
-            android:textSize="24dp"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <RadioButton
-            android:id="@+id/radioButton9"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:textSize="24dp"
-            android:text="Adam Osborne"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_width="177dp"
+            android:layout_height="112dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp"
+            android:layout_marginBottom="314dp"
+            android:text="Quiz Up"
+            android:textColor="#1F182C"
+            android:textSize="46sp" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="101dp"
-            android:textSize="28dp"
-            android:text="Next Question" />
+            android:layout_width="170dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="123dp"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="458dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginRight="117dp"
+            android:layout_marginBottom="196dp"
+            android:text="Start Quiz"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="launchSecondActivity"/>
 
-    </LinearLayout>
-
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="285dp"
+            android:layout_height="212dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/quiz" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

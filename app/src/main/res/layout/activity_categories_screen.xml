@@ -24,6 +24,7 @@
             android:layout_marginLeft="27dp"
             android:layout_marginBottom="361dp"
             android:textSize="36sp"
+            android:onClick=""
             tools:text="Maths" />
 
         <RadioButton
